@@ -262,3 +262,17 @@
 
 
 
+
+
+
+
+
+
+const cart = [
+  { label: 'Apples', price: 100, quantity: 2 },
+  { label: 'Bananas', price: 120, quantity: 3 },
+  { label: 'Lemons', price: 70, quantity: 4 },
+];
+const sumQuantity = cart.reduce((acc, value) => acc + value.quantity, 0);
+
+console.log(sumQuantity);
